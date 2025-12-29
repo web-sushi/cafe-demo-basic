@@ -3,27 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espresso Haven | Cozy Café</title>
+    <title>Espresso Haven | Artisan Coffee & Cozy Atmosphere</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <h1>Espresso Haven</h1>
-      <p class="tagline">Coffee. Comfort. Calm.</p>
-      <a href="#contact" class="btn-primary">Visit Us</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">Espresso Haven</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header class="header" id="home">
+      <div class="hero-content">
+        <h1>Espresso Haven</h1>
+        <p class="tagline">Where Every Cup Tells a Story</p>
+        <p class="hero-description">
+          Experience the perfect blend of artisan coffee, warm hospitality, and
+          a space that feels like home. From our carefully sourced beans to our
+          handcrafted pastries, every detail is crafted with care.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn-secondary">Reserve a Table</a>
+        </div>
+      </div>
     </header>
 
     <!-- About -->
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="card">
         <div class="story-image img-story"></div>
-        <h3>Our Story : Where Every Cup Has a Story</h3>
-        <p>
-          It all started with a question:<br />
+        <h2 class="section-title">Our Story</h2>
+        <p class="lead-text">
+          It all started with a simple question:<br />
           <em>What if coffee could be more than just caffeine?</em>
         </p>
-        <p style="margin-top: 10px">
+        <p>
           In the spring of 2019, Maria and James found themselves in the same
           place many of us do, burnt out, overworked, and desperately missing
           the simple joys of life. Over lukewarm coffee in a generic chain cafe,
@@ -31,7 +61,7 @@
           look like? What would it feel like? More importantly, what would it
           mean to their community?
         </p>
-        <p style="margin-top: 10px">
+        <p>
           Six months later, armed with savings, support from family, and a whole
           lot of naive optimism, they signed the lease on a small corner space
           that had been everything from a barbershop to a bookstore over its
@@ -40,13 +70,31 @@
           walls in exchange for the promise of free coffee for life, a promise
           we still honor today.
         </p>
+        <p>
+          Today, Espresso Haven is more than a café. It's a gathering place
+          where students find quiet corners to study, where friends reconnect
+          over perfectly brewed lattes, and where neighbors become family. We
+          source our beans directly from small farms, ensuring every cup
+          supports sustainable practices and fair wages. Our pastries are baked
+          fresh each morning, and our baristas are trained not just in
+          technique, but in the art of making you feel welcome.
+        </p>
+        <p>
+          We believe that great coffee is about connection to the land, to the
+          people who grow it, and to each other. Come visit us, and let's share
+          a cup together.
+        </p>
       </div>
     </section>
 
     <!-- Menu Preview -->
-    <section class="menu-bg">
+    <section class="menu-bg" id="menu">
       <div class="menu-inner">
         <h2 class="section-title">Menu Highlights</h2>
+        <p class="section-subtitle">
+          From classic espresso to seasonal specialties, each drink is crafted
+          with care using premium beans and traditional techniques.
+        </p>
         <div class="menu-card-grid">
           <!-- Espresso -->
           <div class="menu-card">
@@ -57,7 +105,10 @@
             <div class="menu-content">
               <div>
                 <h3>Espresso</h3>
-                <p class="menu-desc">Rich, bold, classic shot</p>
+                <p class="menu-desc">
+                  Rich, bold, and perfectly balanced. Our signature shot made
+                  from single-origin beans.
+                </p>
               </div>
               <span class="price">¥450</span>
             </div>
@@ -72,7 +123,10 @@
             <div class="menu-content">
               <div>
                 <h3>Café Latte</h3>
-                <p class="menu-desc">Smooth milk & espresso</p>
+                <p class="menu-desc">
+                  Smooth, velvety milk perfectly steamed and poured over our
+                  premium espresso.
+                </p>
               </div>
               <span class="price">¥550</span>
             </div>
@@ -87,7 +141,10 @@
             <div class="menu-content">
               <div>
                 <h3>Matcha Latte</h3>
-                <p class="menu-desc">Stone-ground Japanese matcha</p>
+                <p class="menu-desc">
+                  Ceremonial-grade Japanese matcha, stone, ground and whisked to
+                  perfection.
+                </p>
               </div>
               <span class="price">¥600</span>
             </div>
@@ -102,7 +159,10 @@
             <div class="menu-content">
               <div>
                 <h3>Butter Croissant</h3>
-                <p class="menu-desc">Flaky, baked fresh daily</p>
+                <p class="menu-desc">
+                  Flaky, golden layers made with European butter, baked fresh
+                  every morning.
+                </p>
               </div>
               <span class="price">¥420</span>
             </div>
@@ -116,8 +176,11 @@
             ></div>
             <div class="menu-content">
               <div>
-                <h3>Cheesecake</h3>
-                <p class="menu-desc">Creamy, lightly sweet</p>
+                <h3>New York Cheesecake</h3>
+                <p class="menu-desc">
+                  Creamy, rich, and perfectly sweet. Served with seasonal fruit
+                  compote.
+                </p>
               </div>
               <span class="price">¥650</span>
             </div>
@@ -132,46 +195,355 @@
             <div class="menu-content">
               <div>
                 <h3>Seasonal Blend</h3>
-                <p class="menu-desc">Rotating specialty beans</p>
+                <p class="menu-desc">
+                  Rotating selection of specialty beans. Ask our baristas about
+                  today's featured roast.
+                </p>
               </div>
               <span class="price muted">Ask Staff</span>
             </div>
           </div>
         </div>
+        <p class="menu-note">
+          <strong>Full menu available in-store.</strong> We also offer vegan
+          options, alternative milks, and can accommodate most dietary
+          restrictions. Just ask!
+        </p>
       </div>
     </section>
 
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <h2 class="section-title">Experience Our Space</h2>
+      <p class="section-subtitle">
+        Step inside our cozy café and see why it's become a beloved neighborhood
+        gathering place.
+      </p>
+      <div class="gallery-grid">
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/cafe-latte.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Cozy Interior</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/espresso.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Artisan Coffee</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/matcha-latte.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Fresh Pastries</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/cheesecake.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Daily Specials</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/croissant.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Morning Vibes</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item"
+          style="background-image: url('assets/drip.jpg')"
+        >
+          <div class="gallery-overlay">
+            <span>Perfect Brew</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews / Testimonials -->
+    <section class="section reviews" id="reviews">
+      <h2 class="section-title">What Our Guests Say</h2>
+      <p class="section-subtitle">
+        Don't just take our word for it. Here's what our community has to say
+        about their experience at Espresso Haven.
+      </p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "This is hands down the best coffee shop in Shinjuku. The atmosphere
+            is warm and inviting, the coffee is exceptional, and the staff
+            remembers your name. I've been coming here every morning for the
+            past year, and it's become my favorite part of the day."
+          </p>
+          <div class="review-author">
+            <strong>Yuki Tanaka</strong>
+            <span>Regular Customer</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "As a remote worker, I'm always looking for the perfect café with
+            good Wi-Fi and great coffee. Espresso Haven checks all the boxes.
+            The matcha latte is incredible, and the croissants are the best I've
+            had outside of Paris. Highly recommend!"
+          </p>
+          <div class="review-author">
+            <strong>Sarah Chen</strong>
+            <span>Digital Nomad</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "I brought my family here during our Tokyo visit, and it was the
+            highlight of our trip. The owners are so friendly, and they took
+            time to explain the coffee making process to my kids. The cheesecake
+            is divine! We'll definitely be back on our next visit."
+          </p>
+          <div class="review-author">
+            <strong>Michael & Lisa Johnson</strong>
+            <span>Tourists from USA</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The attention to detail here is remarkable. Every cup is crafted
+            with care, and you can taste the difference. The seasonal blend
+            changes keep things interesting, and I love supporting a local
+            business that cares about sustainability and quality."
+          </p>
+          <div class="review-author">
+            <strong>Kenji Yamamoto</strong>
+            <span>Coffee Enthusiast</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "I'm a student at a nearby university, and Espresso Haven has become
+            my second home. The quiet atmosphere is perfect for studying, the
+            coffee keeps me focused, and the staff never rushes me even when I
+            stay for hours. The prices are student-friendly too. This place is a
+            gem!"
+          </p>
+          <div class="review-author">
+            <strong>Akari Suzuki</strong>
+            <span>University Student</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "I've been a coffee shop owner myself, so I know what makes a great
+            café. Espresso Haven exceeds expectations in every way from the
+            quality of their beans to the warmth of their service. The owners
+            clearly have a passion for what they do, and it shows in every
+            detail. This is how a neighborhood café should be."
+          </p>
+          <div class="review-author">
+            <strong>David Park</strong>
+            <span>Local Business Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Grid -->
     <section class="section info-grid">
       <div class="card soft">
         <h3>Opening Hours</h3>
         <div class="hours">
-          <div>
-            <strong>Weekdays</strong>
+          <div class="hours-item">
+            <strong>Monday - Friday</strong>
             <span>7:00 AM – 6:00 PM</span>
           </div>
-          <div>
-            <strong>Weekends</strong>
+          <div class="hours-item">
+            <strong>Saturday & Sunday</strong>
             <span>8:00 AM – 7:00 PM</span>
           </div>
         </div>
+        <p class="hours-note">
+          We're closed on national holidays. Follow us on social media for
+          special hours and events.
+        </p>
       </div>
 
       <div class="card soft">
         <h3>Location</h3>
-        <p>Shinjuku, Tokyo</p>
-        <a href="#" class="link">View on Google Maps</a>
+        <p class="location-text">
+          <strong>Espresso Haven</strong><br />
+          2-15-12 Shinjuku, Shinjuku City<br />
+          Tokyo 160-0022, Japan
+        </p>
+        <a href="#" class="link">View on Google Maps →</a>
+        <p class="location-note">
+          Just a 5-minute walk from Shinjuku Station. Look for the warm lights
+          and the smell of fresh coffee!
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">Do you take reservations?</h3>
+          <p class="faq-answer">
+            Yes! We accept reservations for groups of 4 or more. For smaller
+            groups, we operate on a first-come, first-served basis. You can make
+            a reservation through our contact form or by calling us directly.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you have Wi-Fi?</h3>
+          <p class="faq-answer">
+            Absolutely! We offer free high-speed Wi-Fi for all our guests. It's
+            perfect for remote work or studying. We just ask that you be mindful
+            of others during busy hours.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            Can you accommodate dietary restrictions?
+          </h3>
+          <p class="faq-answer">
+            Yes, we're happy to accommodate! We offer vegan options, gluten-free
+            pastries (limited selection), and alternative milks (oat, almond,
+            soy). Please let us know about any allergies or dietary needs when
+            you order.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you sell coffee beans?</h3>
+          <p class="faq-answer">
+            Yes! We sell our house blend and seasonal selections by the bag. You
+            can purchase them in-store or ask about our subscription service for
+            regular deliveries.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Is the café child-friendly?</h3>
+          <p class="faq-answer">
+            Very much so! We welcome families and have high chairs available. We
+            also offer kid-friendly drinks like hot chocolate and steamed milk.
+            The atmosphere is relaxed and perfect for families.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you host events or private parties?</h3>
+          <p class="faq-answer">
+            We occasionally host small events like coffee tastings and book
+            clubs. For private parties, please contact us at least two weeks in
+            advance. We can accommodate groups up to 20 people.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="section contact" id="contact">
-      <h2>Contact / Reservation</h2>
-
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">
+        Have a question, want to make a reservation, or just say hello? We'd
+        love to hear from you.
+      </p>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Your first name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Your last name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="080-1234-5678"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inquiry">Inquiry Type *</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">Select an option</option>
+            <option value="reservation">Reservation</option>
+            <option value="general">General Question</option>
+            <option value="event">Event Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us how we can help..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">
+          Send Message
+        </button>
+        <p class="form-note">
+          Most inquiries are answered within 24 hours. For urgent matters,
+          please call us directly.
+        </p>
       </form>
     </section>
 
@@ -179,21 +551,38 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-grid1">
-          <strong>Neighborhood Café</strong>
-          <div class="small">Good coffee. Good company.</div>
+          <strong class="footer-logo">Espresso Haven</strong>
+          <div class="small">Good coffee. Good company. Good vibes.</div>
+          <p class="footer-description">
+            A neighborhood café in the heart of Shinjuku, serving artisan coffee
+            and creating community, one cup at a time.
+          </p>
         </div>
         <div class="footer-grid2">
+          <div class="footer-links">
+            <div class="footer-link-group">
+              <strong>Quick Links</strong>
+              <a href="#about">About Us</a>
+              <a href="#menu">Menu</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-link-group">
+              <strong>Connect</strong>
+              <a href="mailto:hello@espressohaven.com"
+                >hello@espressohaven.com</a
+              >
+              <a href="tel:+81312345678">+81 3-1234-5678</a>
+            </div>
+          </div>
           <div class="footer-icons">
-            <a href="mailto:hello@yourcafe.com" aria-label="Email">
-              <!-- Email -->
+            <a href="mailto:hello@espressohaven.com" aria-label="Email">
               <svg viewBox="0 0 24 24">
                 <path d="M2 4h20v16H2z" fill="none" />
                 <path d="M2 6l10 7L22 6" />
               </svg>
             </a>
-
-            <a href="tel:+1234567890" aria-label="Telephone">
-              <!-- Phone -->
+            <a href="tel:+81312345678" aria-label="Telephone">
               <svg viewBox="0 0 24 24">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2
@@ -211,18 +600,14 @@
                 />
               </svg>
             </a>
-
             <a href="#" aria-label="Instagram">
-              <!-- Instagram -->
               <svg viewBox="0 0 24 24">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="18" cy="6" r="1" />
               </svg>
             </a>
-
             <a href="#" aria-label="Facebook">
-              <!-- Facebook -->
               <svg viewBox="0 0 24 24">
                 <path
                   d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7
@@ -232,6 +617,9 @@
             </a>
           </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Espresso Haven. All rights reserved.</p>
       </div>
     </footer>
 
